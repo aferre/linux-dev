@@ -244,6 +244,8 @@ debian_regs () {
 			squeeze|lucid|precise)
 				pkg="ia32-libs"
 				check_dpkg
+				pkg="libncurses5"
+				check_dpkg
 				;;
 			wheezy|jessie|sid|quantal|raring|saucy)
 				pkg="libc6:i386"
