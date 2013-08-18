@@ -242,6 +242,8 @@ debian_regs () {
 			unset dpkg_multiarch
 			case "${deb_distro}" in
 			squeeze|lucid|precise)
+				pkg="libncurses5-dev"
+				check_dpkg
 				pkg="ia32-libs"
 				check_dpkg
 				;;
